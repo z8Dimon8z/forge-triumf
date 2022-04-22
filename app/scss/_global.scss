@@ -4,11 +4,11 @@ body {
 }
 
 body {
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  color: $dark-500;
-  background-color: $white;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  color: $white;
+  background-color: $dark;
   display: flex;
   flex-direction: column;
 }
@@ -18,10 +18,7 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1390px;
   padding: 0 15px;
   margin: 0 auto;
-}
-h1{
-  font-size: 20px;
 }

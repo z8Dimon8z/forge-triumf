@@ -5,17 +5,85 @@
 @import 'libs';
 @import 'mixsin';
 
-.text{
-  font-family: 'Ruda-Black', sans-serif;
-  font-size: 25px;
-  width: 300px;
-  @include line-clamp(3);
+.header {
+  padding-top: 19px;
+  padding-bottom: 153px;
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  // height: 836px;
+		&__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 55px;
+		}
+
+		&__buttom {
+		}
+
+		&__title {
+      max-width: 517px;
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 1.2;
+      margin-bottom: 26px;
+		}
+
+		&__description {
+      max-width: 491px;
+      font-weight: 500;
+      margin-bottom: 62px;
+      p{
+        margin-bottom: 26px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+		}
+
+		&__btn {
+      padding: 11px 39px;
+      font-size: 20px;
+      background-color: $white;
+      border: 1px solid $white;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 20px rgba($white, 0.5);
+      border-radius: 50px;
+      color: $dark;
+		}
 }
 
-.text-footer{
-  font-family: 'OpenSans-Light', sans-serif;
-  font-size: 30px;
+.menu {
+  display: flex;
+		&__item {
+      margin-right: 16px;
+      &:last-child{
+        margin-right: 0;
+      }
+		}
+
+		&__link {
+      font-size: 18px;
+      line-height: 1.2;
+		}
 }
+.adress {
+		&__text {
+      font-size: 16px;
+      max-width: 200px;
+		}
+
+		&__link {
+      display: block;
+      font-size: 16px;
+      span{
+        font-weight: bold;
+      }
+		}
+}
+
 
 
 
