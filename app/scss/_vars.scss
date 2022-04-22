@@ -1,0 +1,19 @@
+$dark-500: #121212;
+$white: #ffffff;
+
+
+@include font-face(OpenSans-Bold, OpenSans-Bold, 700);
+
+@include font-face(OpenSans-SemiBold, OpenSans-SemiBold, 600);
+
+@include font-face(OpenSans-Regular, OpenSans-Regular, 400);
+
+@include font-face(OpenSans-Light, OpenSans-Light, 300);
+
+@include font-face(Ruda-Black, Ruda-Black, 900);
+
+@include font-face(Ruda-Bold, Ruda-Bold, 700);
+
+@include font-face(Ruda-SemiBold, Ruda-SemiBold, 600);
+
+@include font-face(Ruda-Regular, Ruda-Regular, 400);
