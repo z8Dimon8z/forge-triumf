@@ -36,13 +36,791 @@
           <p>Эксклюзивные предметы экстерьера, мебель, скульптура, подарки</p>
           <p>Есть идея, а с эксклюзивом никтоне может попасть в точку?</p>
         </div>
-        <button class="header__btn">Обсудить идею</button>
+        <button class="header__btn btn">Обсудить идею</button>
       </div>
     </div>
   </header>
 
   <main class="main">
+    <section class="company">
+      <div class="container">
+        <h2 class="title">О компании</h2>
+        <div class="company__inner">
+          <div class="company__content">
+            <p class="company__text">Наша компания работает на рынке с 2014 года. На сегодняшний день мы
+              специализируемся на производстве металлоизделий на заказ и металлоконструкций по индивидуальным чертежам и
+              образцам:</p>
+            <ul class="company__list">
+              <li class="company__item">- художественная ковка</li>
+              <li class="company__item">- услуги кузнеца</li>
+              <li class="company__item">- сварочные работы</li>
+              <li class="company__item">- монтаж и демонтаж</li>
+              <li class="company__item">- аргонная сварка</li>
+              <li class="company__item">- изготовление дизайнов любой сложности</li>
+              <li class="company__item">- полимерное покрытие</li>
+            </ul>
+            <button class="company__btn btn">Обсудить идею</button>
+          </div>
+          <img class="company__img" src="images/company-img.jpg" alt="фото работы компании">
+        </div>
+      </div>
+    </section>
 
+    <section class="partners">
+      <div class="container">
+        <h2 class="title partners__title">Наши партнеры</h2>
+        <div class="partners__box">
+          <p>DOOR HAN</p>
+          <p>ТОО Ушаково АГРО</p>
+          <p>ТОО "Нуртуган 2030"</p>
+        </div>
+        <div class="partners__images">
+          <img class="partners__img" src="images/partner-img-1.jpg" alt="фото партнеры">
+          <img class="partners__img" src="images/partner-img-2.jpg" alt="фото партнеры">
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="works__top">
+        <div class="container">
+          <h2 class="title works__title">Каталог продукции</h2>
+
+          <ul class="filter__one">
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter="all">
+                Все работы
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-a">
+                Козырьки
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-b">
+                Навесы
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-c">
+                Беседки
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-d">
+                Ворота
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-f">
+                Решетки
+              </button>
+            </li>
+          </ul>
+
+          <ul class="filter__two">
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-h">
+                Лестницы
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-s">
+                Мангалы
+              </button>
+            </li>
+            
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-z">
+                Перила
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-y">
+                Входные группы
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-r">
+                Ограждения
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button" data-filter=".category-j">
+                Другое
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works__wrapper">
+        <ul class="works__content">
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-11.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-a">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-12.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория a -->
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-b.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-b.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-b.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-b.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-b.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-b.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-b">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-b.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория b -->
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-c.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-c.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-c.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-c.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-c.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-c.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-c.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-c.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-c.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-c">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-c.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория с -->
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-d.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-d.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-d.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-d.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-d.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-d.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-d.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-d.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-d.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-d">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-d.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория d -->
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-f.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-f.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-f.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-f.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-f.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-f.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-f.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-f.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-f.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-f">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-f.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория f-->
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-h.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-h.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-h.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-h.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-h.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-h.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-h.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-h.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-h.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-h.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <li class="works__box mix category-h">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-11-h.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+        <!-- категория h -->
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-s.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-s.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-s.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-s.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-s.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-s.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-s.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-s.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-s.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-s">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-s.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория s -->
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-z.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-z.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-z.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-z.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-z.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-z.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-z.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-z.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-z.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-z">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-z.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория z -->
+            <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-y.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-y.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-y.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-y.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-y.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-y.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-y.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-y.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-y.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-y">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-y.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория y -->
+              <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-r.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-r.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-r.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-r.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-r.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-r.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-r.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-r.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-r.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-r">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-r.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категория r -->
+              <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-1-j.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
+              <img class="works__img" src="images/works/content-img-2-j.jpg" alt="Фотография моста через реку">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/a_FSfzQ2IW4">
+              <img class="works__img" src="images/works/content-img-3-j.jpg" alt="Железнодорожный мост">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-4-j.jpg" alt="Фотография города на побережьи">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/5lCRsLjMeso">
+              <img class="works__img" src="images/works/content-img-5-j.jpg" alt="Побережье океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-6-j.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-7-j.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-8-j.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-9-j.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+
+          <li class="works__box mix category-j">
+            <a class="works__link" data-fancybox="gallery" href="https://youtu.be/bl0liZbEjs8">
+              <img class="works__img" src="images/works/content-img-10-j.jpg" alt="Скала на берегу океана">
+            </a>
+          </li>
+          <!-- категоря j -->
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

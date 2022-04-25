@@ -20,9 +20,6 @@
       margin-bottom: 55px;
 		}
 
-		&__buttom {
-		}
-
 		&__title {
       max-width: 517px;
       font-weight: 700;
@@ -41,17 +38,6 @@
           margin-bottom: 0;
         }
       }
-		}
-
-		&__btn {
-      padding: 11px 39px;
-      font-size: 20px;
-      background-color: $white;
-      border: 1px solid $white;
-      box-sizing: border-box;
-      box-shadow: 0px 4px 20px rgba($white, 0.5);
-      border-radius: 50px;
-      color: $dark;
 		}
 }
 
@@ -83,6 +69,169 @@
       }
 		}
 }
+
+.company {
+  padding-top: 20px;
+  padding-bottom: 128px;
+
+		&__inner {
+      display: flex;
+      justify-content: space-between;
+		}
+
+    &__content{
+      margin-right: 15px;
+    }
+
+		&__text {
+      max-width: 608px;
+		}
+
+		&__list {
+      margin-bottom: 43px;
+		}
+
+    &__img{
+      width: 50%;
+    }
+}
+.title {
+  margin-bottom: 73px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.partners {
+  padding-bottom: 205px;
+		&__title {
+      position: relative;
+      margin-bottom: 96px;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/decor-right.png');
+        top: -40px;
+        right: 0;
+        width: 459px;
+        height: 325px;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        background-image: url('../images/decor-left.png');
+        top: -40px;
+        left: 0;
+        width: 459px;
+        height: 325px;
+      }
+		}
+
+		&__box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 96px;
+      p{
+        margin-right: 89px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+		}
+
+		&__images {
+      display: flex;
+      justify-content: center;
+		}
+
+		&__img {
+      margin-right: 124px;
+      &:last-child{
+          margin-right: 0;
+        }
+		}
+}
+
+.works {
+    padding-bottom: 205px;
+
+		&__top {
+      margin-bottom: 100px;
+		}
+
+		&__wrapper {
+      max-width: 1390px;
+      padding: 0 15px;
+      margin: 0 auto;
+		}
+
+		&__content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 45px;
+		}
+
+		&__box {
+      width: 306px;
+      height: 267px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/works/decor-top.png');
+        top: -20px;
+        right: -20px;
+        width: 168px;
+        height: 120px;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        background-image: url('../images/works/decor-butom.png');
+        bottom: -20px;
+        left: -20px;
+        width: 168px;
+        height: 120px;
+      }
+		}
+
+		&__img {
+      width: 306px;
+      height: 267px;
+      object-fit: cover;
+      border-radius: 25px;
+		}
+}
+.filter {
+
+		&__one {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 77px;
+		}
+
+		&__item {
+      margin-right: 39px;
+      &:last-child{
+        margin-right: 0;
+      }
+		}
+
+		&__btn {
+      color: $white;
+      font-size: 30px;
+      font-weight: 500;
+		}
+
+		&__two {
+      display: flex;
+      justify-content: center;
+		}
+}
+
+
+
+
 
 
 

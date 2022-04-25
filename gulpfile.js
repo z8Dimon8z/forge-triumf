@@ -68,6 +68,8 @@ function images() { // сжатие картинок
 function scripts() { // сжатие JS файлов и  подключение JS файлов
   return src([
     'node_modules/jquery/dist/jquery.js', // подключен jquery (можно убрать если jquery не нужен)
+    'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'app/js/main.js' // подключен main.js
   ])
     .pipe(concat('main.min.js'))
