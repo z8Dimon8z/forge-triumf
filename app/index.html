@@ -10,24 +10,26 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <nav class="header__top">
-        <a class="logo" href="#">
+        <a class="logo" href="#header">
           <img class="logo__image" src="images/logo.svg" alt="Логотип кузницы">
         </a>
+        <button class="header__burger" type="button">
+          <span class="header__line"></span>
+        </button>
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Наши партнеры</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Каталог продукции</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Приемущества</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          <li class="menu__item"><a class="menu__link" href="#company">О компании</a></li>
+          <li class="menu__item"><a class="menu__link" href="#partners">Наши партнеры</a></li>
+          <li class="menu__item"><a class="menu__link" href="#works">Каталог продукции</a></li>
+          <li class="menu__item"><a class="menu__link" href="#advantages">Приемущества</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
         </ul>
         <div class="adress">
           <p class="adress__text">г. Нур-Султан, ул. Тлендиева 24 металлоцех бокс 1,2</p>
           <a class="adress__link" href="#">ватсап <span>+77071093609</span></a>
           <a class="adress__link" href="#">ватсап <span>+77074449968</span></a>
-
         </div>
       </nav>
       <div class="header__buttom">
@@ -36,13 +38,13 @@
           <p>Эксклюзивные предметы экстерьера, мебель, скульптура, подарки</p>
           <p>Есть идея, а с эксклюзивом никтоне может попасть в точку?</p>
         </div>
-        <button class="header__btn btn">Обсудить идею</button>
+        <button class="header__btn btn js-open-modal" data-modal="2">Обсудить идею</button>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="company">
+    <section class="company" id="company">
       <div class="container">
         <h2 class="title">О компании</h2>
         <div class="company__inner">
@@ -59,14 +61,14 @@
               <li class="company__item">- изготовление дизайнов любой сложности</li>
               <li class="company__item">- полимерное покрытие</li>
             </ul>
-            <button class="company__btn btn">Обсудить идею</button>
+            <button class="company__btn btn js-open-modal" data-modal="2">Обсудить идею</button>
           </div>
           <img class="company__img" src="images/company-img.jpg" alt="фото работы компании">
         </div>
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners">
       <div class="container">
         <h2 class="title partners__title">Наши партнеры</h2>
         <div class="partners__box">
@@ -85,76 +87,76 @@
       <div class="works__top">
         <div class="container">
           <h2 class="title works__title">Каталог продукции</h2>
+          <div class="filter__box">
+            <ul class="filter__one">
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter="all">
+                  Все работы
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-a">
+                  Козырьки
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-b">
+                  Навесы
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-c">
+                  Беседки
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-d">
+                  Ворота
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-f">
+                  Решетки
+                </button>
+              </li>
+            </ul>
 
-          <ul class="filter__one">
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter="all">
-                Все работы
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-a">
-                Козырьки
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-b">
-                Навесы
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-c">
-                Беседки
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-d">
-                Ворота
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-f">
-                Решетки
-              </button>
-            </li>
-          </ul>
+            <ul class="filter__two">
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-h">
+                  Лестницы
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-s">
+                  Мангалы
+                </button>
+              </li>
 
-          <ul class="filter__two">
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-h">
-                Лестницы
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-s">
-                Мангалы
-              </button>
-            </li>
-            
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-z">
-                Перила
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-y">
-                Входные группы
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-r">
-                Ограждения
-              </button>
-            </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button" data-filter=".category-j">
-                Другое
-              </button>
-            </li>
-          </ul>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-z">
+                  Перила
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-y">
+                  Входные группы
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-r">
+                  Ограждения
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__btn" type="button" data-filter=".category-j">
+                  Другое
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
       <div class="works__wrapper">
         <ul class="works__content">
 
@@ -229,7 +231,7 @@
               <img class="works__img" src="images/works/content-img-12.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория a -->
+
 
           <li class="works__box mix category-b">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
@@ -272,7 +274,8 @@
               <img class="works__img" src="images/works/content-img-7-b.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория b -->
+
+
           <li class="works__box mix category-c">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-c.jpg" alt="Фотография города на побережьи">
@@ -332,7 +335,8 @@
               <img class="works__img" src="images/works/content-img-10-c.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория с -->
+
+
           <li class="works__box mix category-d">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-d.jpg" alt="Фотография города на побережьи">
@@ -392,7 +396,8 @@
               <img class="works__img" src="images/works/content-img-10-d.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория d -->
+
+
           <li class="works__box mix category-f">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-f.jpg" alt="Фотография города на побережьи">
@@ -452,7 +457,8 @@
               <img class="works__img" src="images/works/content-img-10-f.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория f-->
+
+
           <li class="works__box mix category-h">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-h.jpg" alt="Фотография города на побережьи">
@@ -517,7 +523,8 @@
               <img class="works__img" src="images/works/content-img-11-h.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-        <!-- категория h -->
+
+
           <li class="works__box mix category-s">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-s.jpg" alt="Фотография города на побережьи">
@@ -577,7 +584,9 @@
               <img class="works__img" src="images/works/content-img-10-s.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория s -->
+
+
+
           <li class="works__box mix category-z">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-z.jpg" alt="Фотография города на побережьи">
@@ -637,8 +646,10 @@
               <img class="works__img" src="images/works/content-img-10-z.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория z -->
-            <li class="works__box mix category-y">
+
+
+
+          <li class="works__box mix category-y">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-y.jpg" alt="Фотография города на побережьи">
             </a>
@@ -697,8 +708,9 @@
               <img class="works__img" src="images/works/content-img-10-y.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория y -->
-              <li class="works__box mix category-r">
+
+
+          <li class="works__box mix category-r">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-r.jpg" alt="Фотография города на побережьи">
             </a>
@@ -757,8 +769,9 @@
               <img class="works__img" src="images/works/content-img-10-r.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категория r -->
-              <li class="works__box mix category-j">
+
+
+          <li class="works__box mix category-j">
             <a class="works__link" data-fancybox="gallery" href="https://youtu.be/RK1K2bCg4J8">
               <img class="works__img" src="images/works/content-img-1-j.jpg" alt="Фотография города на побережьи">
             </a>
@@ -817,16 +830,114 @@
               <img class="works__img" src="images/works/content-img-10-j.jpg" alt="Скала на берегу океана">
             </a>
           </li>
-          <!-- категоря j -->
+
         </ul>
+      </div>
+    </section>
+    
+    <div class="application">
+      <div class="container">
+        <p class="application__text">Оставьте заявку и мы расчитаем стоимость изделия в кратчайшие сроки</p>
+        <button class="application__btn btn js-open-modal" data-modal="2">Оставить заявку</button>
+      </div>
+    </div>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <h2 class="title advantages__title">Наши приемущества</h2>
+        <div class="advantages__inner">
+          <div class="advantages__item">
+            <svg class="advantages__icon">
+              <use xlink:href="images/sprite.svg#quality"></use>
+            </svg>
+            <p class="advantages__text">Качество</p>
+          </div>
+          <div class="advantages__item advantages__item--center">
+            <svg class="advantages__icon">
+              <use xlink:href="images/sprite.svg#efficiency"></use>
+            </svg>
+            <p class="advantages__text">Оперативность</p>
+          </div>
+          <div class="advantages__item">
+            <svg class="advantages__icon">
+              <use xlink:href="images/sprite.svg#price"></use>
+            </svg>
+            <p class="advantages__text">Низкие цены</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__inner">
+          <div class="contacts__content">
+            <p class="contacts__adress">г. Нур-Султан, ул. Тлендиева 24 металлоцех бокс 1,2</p>
+            <p class="contacts__chart">График работы — ежедневно с 09,00 до 20,00</p>
+            <a class="contacts__viber" href="#">ватсап <span>+77071093609</span></a>
+            <a class="contacts__tel" href="tel:+77074449968">телефон <span>+77074449968</span></a>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a18d9fec25a4c2eca993ca36d07879eb777ca0d4c308d449b3d0a4cde20c92a&amp;source=constructor"
+              width="740" height="400" frameborder="0"></iframe>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p class="text-footer">Футер</p>
+    <div class="footer__box">
+      <a class="logo" href="#header">
+        <img class="logo__image" src="images/logo.svg" alt="Логотип кузницы">
+      </a>
+    </div>
   </footer>
 
+<div class="modal-demo" data-modal="2">
+
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+    </svg>
+    <div class="modal__inner">
+      <div class="modal__img">
+        <div class="modal__text">
+          <p>г. Нур-Султан, ул. Тлендиева 24
+            металлоцех бокс 1,2
+            ватсап +77071093609
+            телефон +77074449968
+          </p>
+        </div>
+      </div>
+      <div class="modal__form">
+        <h2 class="modal__title title">Заполните форму
+          и мы свяжемся с вами</h2>
+        <form action="#" class="form">
+
+          <input type="hidden" name="project_name" value="Кузница триумф">
+          <input type="hidden" name="admin_email" value="dima-lysak@yandex.ru">
+          <input type="hidden" name="form_subject" value="Form">
+
+
+          <input type="text" class="form__input" name="Имя" placeholder="Ваше имя">
+          <input type="tel" class="form__input" name="Телефон" placeholder="Ваш телефон">
+          <input type="email" class="form__input" name="E-mail" placeholder="E-mail">
+          <textarea class="form__input form__input--message" name="Сообщение" placeholder="Комментарий"
+            required></textarea>
+          <div class="form__box">
+          <input type="checkbox" class="form__checkbox">
+          <p class="form__text">Я согласен с политикой конфиденциальности</p>
+          </div>
+          <button class="form__btn btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay js-overlay-modal"></div>
 
 
 
@@ -834,7 +945,8 @@
 
 
 
-  <script src="js/main.min.js"></script>
+
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
